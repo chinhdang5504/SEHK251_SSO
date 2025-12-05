@@ -32,7 +32,7 @@ public class LoginController {
             cookie.setPath("/");
             cookie.setMaxAge(60 * 60 * 5);
             httpServletResponse.addCookie(cookie);
-            return "redirect:http://localhost:5173";
+            return "redirect:http://localhost:5173/after";
         } catch (Exception e) {
             return "redirect:http://localhost:8081/sso/login?error=" + e.getMessage();
         }
